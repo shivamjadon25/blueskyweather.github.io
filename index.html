@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/fevicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,300;1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueSky</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><img src="https://img.icons8.com/color/48/smiling-sun.png" alt="smiling-sun"/><h1>BlueSky</h1>
+        </header>
+        <!--Top menu -->
+        <div class="leftsidebar">
+            <input type="text" name="text" placeholder="Search location" class="input" id="searchInput">           
+            <div class="weather">
+                <div class="mainimage"><img src="images/cloud.svg"></div>
+                <div class="temp">23°c</div>
+                <div class="daytime">Tuesday, <div class="time">12:00</div></div>
+                <div class="info">
+                    <div class="wind">Wind<h2>30 km/h</h2></div>
+                    <div class="cloudy">
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/partly-cloudy-day--v1.png" alt="partly-cloudy-day--v1"/>
+                        <h2>Cloudy</h2>
+                    </div>
+                    <div class="humidity">Humidity<h2>50%</h2></div>
+                </div>
+                <div class="location">
+                    Mumbai
+                </div>
+            </div>
+           <!--profile image & text-->
+            <!--menu item-->
+        </div>
+        <div class="rightsidebar">
+             <div id="loadingIndicator" class="loader"></div>
+              <div class="forecastname">Weekly Forecast</div>
+              <section>
+                <div class="rightcontainer">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx" id="imgBx1">
+                                <img src="images/clear.svg">
+                            </div>
+                            <div class="contentBx">
+                                <h3 class="forecasttemp1">24°c<br></h3>
+                                <span class="forecastdate1">20 Aug 2023</span>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="">Min.<div id="mintemp1">20°c</div></a>
+                            </li>
+                            <li>
+                                <a href="">Rain<div id="rain1">20%</div></a>
+                            </li>
+                            <li>
+                                <a href="">Max.<div id="maxtemp1">20°c</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx" id="imgBx2">
+                                <img src="images/cloud.svg">
+                            </div>
+                            <div class="contentBx">
+                                <h3 class="forecasttemp2">29°c<br></h3>
+                                <span class="forecastdate2">21 Aug 2023</span>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="">Min.<div id="mintemp2">20°c</div></a>
+                            </li>
+                            <li>
+                                <a href="">Rain<div id="rain2">50%</div></a>
+                            </li>
+                            <li>
+                                <a href="">Max.<div id="maxtemp2">20°c</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx" id="imgBx3">
+                                <img src="images/haze.svg">
+                            </div>
+                            <div class="contentBx">
+                                <h3 class="forecasttemp3">27°c<br></h3>
+                                <span class="forecastdate3">22 Aug 2023</span>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="">Min.<div id="mintemp3">20°c</div></a>
+                            </li>
+                            <li>
+                                <a href="">Rain<div id="rain3">50%</div></a>
+                            </li>
+                            <li>
+                                <a href="">Max.<div id="maxtemp3">20°c</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx" id="imgBx4">
+                                <img src="images/rain.svg">
+                            </div>
+                            <div class="contentBx">
+                                <h3 class="forecasttemp4">22°c<br></h3>
+                                <span class="forecastdate4">23 Aug 2023</span>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="">Min.<div id="mintemp4">20°c</div></a>
+                            </li>
+                            <li>
+                                <a href="">Rain<div id="rain4">50%</div></a>
+                            </li>
+                            <li>
+                                <a href="">Max.<div id="maxtemp4">20°c</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx" id="imgBx5">
+                                <img src="images/snow.svg">
+                            </div>
+                            <div class="contentBx">
+                                <h3 class="forecasttemp5">21°c</h3>
+                                <span class="forecastdate5">24 Aug 2024</span>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="">Min.<div id="mintemp5">20°c</div></a>
+                            </li>
+                            <li>
+                                <a href="">Rain<div id="rain5">50%</div></a>
+                            </li>
+                            <li>
+                                <a href="">Max.<div id="maxtemp5">20°c</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="todaysdataname">Today's Forecast</div>
+            <div class="todaysdata">
+                <div class="todaycard">
+                    <div class="content">
+                        <div class="sunrise"><span>Sunrise</span><img src="images/sunrise.png"></div>
+                        <div class="sunrisetime">6:00 AM</div>
+                        <div class="sunset"><span>Sunset</span><img src="images/sunset.png"></div>
+                        <div class="sunsettime">6:00 PM</div>
+                    </div>
+                </div>
+                <div class="todaycard">
+                    <div class="content">
+                        <div class="airquality">Air Quality Index</div>
+                        <div class="aqivalue">105</div>
+                        <div class="aqistatus">Unhealthy</div>
+                    </div>
+                </div>
+                <div class="todaycard">
+                    <div class="content">
+                        <div class="pressure">Pressure<span>1 Atm</span></div>
+                        <div class="winddirection">Wind Dir. <span>SW</span></div>
+                        <div class="uv">UV Index <span>7</span></div>
+                        <div class="feelslike">Feels Like <span>25°c</span></div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+  <script src="/script/script.js">
+
+  </script>
+</body>
+</html>
