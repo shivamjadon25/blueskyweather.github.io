@@ -54,7 +54,7 @@ const feelslike = document.querySelector(".feelslike span");
 let globalWeatherData; // Declare a global variable to store the weather data
 
 async function getWeatherData(city) {
-    let apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=100a6ef3d6c34ddd928142640230708&q=${city}&days=6&aqi=yes&alerts=no`
+    let apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=100a6ef3d6c34ddd928142640230708&q=${city}&days=6&aqi=yes&alerts=no`
     try {
         const response = await fetch(apiUrl);
         const data = await response.json(); 
